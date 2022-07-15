@@ -1,0 +1,168 @@
+body {
+  /* background-color: lightgray; */
+}
+
+.custom_nav {
+  background-color: #16322a;
+}
+
+/* change the link color */
+.custom_nav .navbar-nav .nav-link {
+  color: white;
+}
+
+.custom_nav .nav-item:hover .nav-link {
+  color: #75970b;
+}
+
+.custom_nav .nav-item:hover {
+  background-color: white;
+}
+
+/* change the color of active or hovered links */
+.custom_nav .nav-item .nav-link.active {
+  color: #75970b;
+}
+
+.nav-link {
+  font-size: 10px;
+}
+
+.banner_section {
+  border: 5px solid;
+  background-image: url("../images/");
+  height: 450px;
+  margin: 0 auto;
+  background-position: 90%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner_content {
+  display: flex;
+  align-items: center;
+  margin-left: 130px;
+  height: 100%;
+  font-size: 36px;
+  color: white;
+}
+
+.first_section {
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  width: 100%;
+}
+/* test */
+.box_one,
+.box_two,
+.box_three {
+  width: 80%;
+}
+/* test */
+.box_one {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.box_header,
+.box_content {
+  width: 90%;
+}
+
+.gallery_section {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 5px;
+  width: 90%;
+  grid-template: "item1 item2 large large" "item3 item4 large large";
+}
+
+.photo {
+  /* background: black; */
+}
+.large {
+  grid-area: large;
+}
+.photo:nth-of-type(2) {
+  grid-area: item1;
+}
+.photo:nth-of-type(3) {
+  grid-area: item2;
+}
+.photo:nth-of-type(4) {
+  grid-area: item3;
+}
+.photo:nth-of-type(5) {
+  grid-area: item4;
+}
+
+.footer_section {
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  display: flex;
+}
+
+.border_left {
+  border-left: 1px solid;
+}
+
+.footer_one,
+.footer_two,
+.footer_three {
+  width: 100%;
+  padding-left: 10px;
+}
+
+.footer_one {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer_content {
+  width: 90%;
+}
+
+.header_section {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .custom_nav .navbar-collapse {
+    background-color: black;
+  }
+
+  .custom_nav .navbar-nav .nav-item {
+    height: 55px;
+  }
+
+  li {
+    padding: 10px;
+    border-bottom: 1px solid white;
+  }
+
+  .nav-link {
+    font-size: 12px;
+  }
+
+  .custom_nav {
+    height: 70px;
+  }
+}

@@ -1,0 +1,19 @@
+.content_shop {
+  display: flex;
+}
+
+.sidebar_shop {
+  width: 15%;
+}
+
+.displaybar_shop {
+  width: 85%;
+  display: flex;
+}
+
+.sidebar_shop ul > li {
+  list-style-type: none;
+}
+
+@media screen and (max-width: 800px) {
+}
